@@ -18,19 +18,19 @@ body, html {
 
 
 header {
-    grid-area: header;background-image: linear-gradient(to right,#CA9900, red,orange,yellow,green,blue,indigo,violet,#CA9900);
+    grid-area: header;background-image: linear-gradient(to right,green, red,orange,yellow,green,blue,indigo,violet,green);
 }
 header h1{font-size: 3em; font-family: 'Shadows Into Light', cursive;font-size: ; text-align: center;color: white}
 header a{display: block; text-align: center;}
 nav { grid-area:nav;  
- padding: 2em;background-image: linear-gradient(to right, #CA9900,yellow,#CA9900);}
+ padding: 2em;background-image: linear-gradient(to right, green,yellow,green);}
 
 main {
     grid-area: main;
 ; padding:15px; background-image: radial-gradient(circle, red, yellow, green);font-family: 'Shadows Into Light', cursive;
 }
 footer {
-    grid-area: footer;background-image: linear-gradient(to right, #CA9900,yellow,#CA9900);
+    grid-area: footer;background-image: linear-gradient(to right, green,yellow,green);
 
 }
 
@@ -53,7 +53,7 @@ footer ul{
 
 blockquote{text-align: center; padding: 13px; border: 1px solid; font-family: serif;}
 
-body{background-color: #CA9900}
+body{background-color: green}
 
 h3{text-align: center;
 }
