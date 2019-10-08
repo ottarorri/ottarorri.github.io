@@ -6,13 +6,13 @@ body, html {
 .wrapper{
     
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 25% 25%;
     grid-template-rows: 10% 50% auto 10%;
     grid-template-areas:
-    "nav nav"
-    "header header"
-    "main sect2"
-    "footer footer";
+    "nav nav nav"
+    "header header header"
+    "main sect1 sect2"
+    "footer footer footer";
 }
 
 
@@ -27,8 +27,7 @@ nav { grid-area:nav; background-color: black
  padding: 2em; margin: 1.5em; }
 
 aside {
-    grid-area: sect1;
-;
+    grid-area: sect1; background-color: #13DB00;font-family: 'Luckiest Guy', cursive;
 }
 
 
@@ -63,4 +62,5 @@ footer ul{
 blockquote{text-align: center; padding: 13px; border: 1px solid; font-family: cursive;}
 
 body{background-color: #0C7602;}
+
 
