@@ -1,0 +1,30 @@
+body{background-color: #0272db; width: 90%; margin: 0 auto;
+}
+
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: 20% auto 20%;
+    grid-template-areas:
+    "header header nav"
+    "main main main"
+    "footer article aside";
+}
+
+
+
+
+
+
+main{background-image: linear-gradient(#ffda6e,#ffe9a8);}
+
+
+
+
+
+
+
+
+
