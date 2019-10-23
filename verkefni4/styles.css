@@ -8,13 +8,15 @@ body {
 }
 h1 {
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2.5em;font-family: 'Roboto Condensed', sans-serif;
 }
 .headsection {width: 100%; background-image: linear-gradient(#ffdd77,#ffe9a8);padding: 2em;}
 
-.verkefni {color: white;}
+.verkefni {color: white;font-family: 'Roboto Condensed', sans-serif;
+}
 
-a {color: white;}
+a {color: white;font-family: 'Roboto Condensed', sans-serif;
+}
 
 
 .container {
@@ -30,7 +32,7 @@ a {color: white;}
 
 .col-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; color: white;
+    grid-template-columns: 1fr 1fr 1fr; color: white;font-family: 'Roboto Condensed', sans-serif;
 }
 .col-4 {
     display: grid;
@@ -47,5 +49,6 @@ blockquote{text-align: center; padding: 20px; background-color: #fff5d9;}
     padding: 0;color: white;}
 
 div h1{color: white;}
+
 
 
