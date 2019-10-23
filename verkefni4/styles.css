@@ -12,6 +12,9 @@ h1 {
 }
 .headsection {width: 100%; background-image: linear-gradient(#ffdd77,#ffe9a8);padding: 2em;}
 
+.verkefni {color: white;}
+
+.topnav {color: white;}
 
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -26,7 +29,7 @@ h1 {
 
 .col-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; color: white;
 }
 .col-4 {
     display: grid;
@@ -36,3 +39,11 @@ h1 {
     grid-gap: 4em
 }
 blockquote{text-align: center; padding: 20px; background-color: #fff5d9;}
+
+.header {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;color: white;}
+
+div h1{color: white;}
+
