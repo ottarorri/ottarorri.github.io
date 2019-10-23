@@ -1,31 +1,38 @@
-body{background-color: #0272db; width: 70%; margin: 0 auto;
+* { box-sizing: border-box }
+
+body {
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
+    background-color: #0272db
 }
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+.headsection {width: 100%; background-image: linear-gradient(#ffdd77,#ffe9a8);padding: 2em;}
 
 
-.wrapper{
-    
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+/* grid */
+.col-2 {
     display: grid;
-    grid-template-columns: 33% auto 33%;
-    grid-template-rows: 20% auto 20%;
-    grid-template-areas:
-    "header header nav"
-    "main main main"
-    "footer article aside";
+    grid-template-columns: 1fr 1fr;
 }
 
-
-
-
-
-
-main{background-image: linear-gradient(#ffda6e,#ffe9a8); padding: 2em;}
-
-
-
-
-blockquote{text-align: center; padding: 20px; background-color: #fff5d9}
-
-
-
-
-
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em
+}
+blockquote{text-align: center; padding: 20px; background-color: #fff5d9;}
