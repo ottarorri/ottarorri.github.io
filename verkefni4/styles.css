@@ -49,3 +49,11 @@ blockquote{text-align: center; padding: 20px; background-color: #fff5d9;}
     padding: 0;color: white;}
 
 div h1{color: white;}
+
+
+.headsection2 {width: 100%; background-color: (#ffdd77);padding: 2em;}
+
+.headsection3 {width: 100%; background-color: (#ffe9a8);padding: 2em;}
+
+.headsection4 {width: 100%; background-image: linear-gradient(#ffe9a8,#ffdd77);padding: 2em;}
+
