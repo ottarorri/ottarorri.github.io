@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-
 #myBtn {
   display: none;
   position: fixed;
@@ -20,7 +19,6 @@
   padding: 20px;
   border-radius: 4px;
 }
-
 #myBtn:hover {
   background-color: #5371FF;
 }
@@ -28,6 +26,7 @@
 
     <title>Verkefni 4.2 Efnisyfirlit og tenglar</title>
     <!-- veljið leturgerð af http://fonts.google.com-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles2.css">
     <script>
   window.onload = function() {  // reload file every second
@@ -40,10 +39,8 @@
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -51,7 +48,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
@@ -77,17 +73,17 @@ function topFunction() {
       <section class="container">
         <nav class="innermenu"> 
           <a href="#Læknisskoðun">Læknisskoðun</a> <!-- #læknis = tengi á id -->
-          <a href="#Óskirnar">Óskirnar 3</a>
+          <a href="#Óskirnar ">Óskirnar 3</a>
           <a href="#Adam">Adam og ...</a>
           <a href="#Alnæmi">Alnæmisfaraldurinn</a>
           <a href="#Jólakveðja">Jólakveðja</a>
           <a href="#Gefoss">Gef oss í dag vort daglegt ... </a>
         </nav> 
-        <h1>Innri og ytri tenglar</h1>
+        <h1 class="svart">Innri og ytri tenglar</h1>
         <p>Í <strong>&lt;footer&gt;</strong> tagið á að setja upplýsignar um þig í DD lista og nokkra tengla í UL lista sem vísa á önnur verkefni og aðrar vefsíður. Vefsíðurnar eiga að birtast í nýjum glugga í vafranum (notið <i>target:_blank</i>)</p>
-        <h1>Innra efnisyfirlit</h1>
+        <h1 class="svart">Innra efnisyfirlit</h1>
         <p>Á vefsíðuna átt þú að bæta við innra efnisyfirliti (e. menu) með tenglum.  Tenglarnir eiga að vísa á málsgreinar sem eru inná vefsíðunni. Nú er mál að skoða hvað hægt er að gera með ID eigindið. Stílaðu efnisyfirlitið með svipuðu sniði og hér er sýnt á mynd. Mundu að stíla gervi klasana a:visited, a:hover, a.active í efnisyfirlitinu. </p>
-        <h1>Ákveðin staðsetning</h1>
+        <h1 class="svart">Ákveðin staðsetning</h1>
         <p>Hvernig á að setja einn tengil á vefsíðuna sem er með fastri staðsetningu neðst á skjánum og  vísar <br> "efst á síðu"?</p>
       </section>
     </div>
@@ -106,7 +102,7 @@ function topFunction() {
           <p><a href=" ">Efst á síðu</a></p>
       </section>
     </div>
-    <div class="height" id="Óskirnar">
+    <div class="headsection" id="Óskirnar">
       <section class="container col-2">
         <div>
             <h3 class=" ">Óskirnar 3</h3>
@@ -126,7 +122,7 @@ function topFunction() {
         </div>
       </section>
     </div>
-    <div class="" id="Adam">
+    <div class="headsection4" id="Adam">
       <section class="container col-2" >
           <h3 class=" ">Adam og ....</h3>
           <P>Dag einn sagði Adam við Guð: „Drottinn, ég er með vandamál.“
@@ -146,7 +142,7 @@ function topFunction() {
           <p><a href=" ">Efst á síðu</a></p>
       </section>
     </div>
-    <div class="" id="Alnæmi">
+    <div class="headsection" id="Alnæmi">
       <section class="container col-2">
           <h3 class=" ">Alnæmisfaraldurinn</h3>
             <p>Nýlega héldu Barack Obama og Vladimir Putin fund um útbreiðslu alnæmis og annarra kynsjúkdóma í löndum sínum. Putin spurði Obama hvernig stjórnvöld í Bandaríkjunum reyndu að koma í veg fyrir alnæmi.
@@ -166,7 +162,7 @@ function topFunction() {
           <p><a href=" ">Efst á síðu</a></p>
       </section>
     </div>
-    <div class="" id="Jólakveðja">
+    <div class="headsection4" id="Jólakveðja">
       <section class="container col-2">
           <h3 class=" ">Jólakveðja</h3>
           <p>Það var aðfangadagskvöld jóla og þjófur var búinn að brjótast inn í hús eitt. Skyndilega heyrir hann rödd sem segir: „Jesús sér þig.“
@@ -187,7 +183,7 @@ function topFunction() {
             </p><p><a href=" ">Efst á síðu</a></p>
         </section>
       </div>
-      <div class="" id="Gefoss">
+      <div class="headsection" id="Gefoss">
         <section class="container col-2">
           <h3 class=" ">Gef oss í dag vort daglegt ... </h3>
           <p>Dag einn var bankað á hurðina á skrifstofu páfans. Inn kom auglýsingastjóri sem vildi gera samning við páfann. Hann settist og kynnti sig: „Ég er frá Kentucky fried chicken. Við viljum fá þig til að gera auglýsingu fyrir okkur. Allt sem þú þarft að segja er að fá kirkjuna til að breyta línunni í faðirvorinu úr Gef oss í dag vort daglegt brauð í Gef oss í dag vorn daglega kjúkling.“
@@ -201,42 +197,68 @@ function topFunction() {
         </section>
       </div>
       <footer class="container col-3">
-          <nav>
-            <h4>DL listi </h4>
-            <dl><!--Description list, nafn tölvupóstur og áfangi-->
-              <dt>Nafn:</dt>
-                <dd><!--nafn hér--></dd>
-              <!--tölvupóstur-->
-              <!--áfangi-->
-            </dl>
-  
-          </nav>
-          <nav>
-            <h4>Innri tenglar <em>(relative links)</em></h4>
-            <ul><!-- inner links -- hér þarf að aðlaga slóðir að eigin verkefnum -->
-              <li>Verkefni 1</li>
-              <li>Verkefni 2</li>
-              <li>Verkefni 3.1</li>
-              <li>Verkefni 3.2</li>
-            </ul>
-          </nav>
-          <nav>
-            <h4>Ytri tenglar <em>(absolute links)</em></h4>
-            <ul> <!-- Absolute links "target _blank" opnar nýjan glugga í vafranum !aðeins notað þegar vísað er út úr eigin vef-->
-              <li> 
-                <a href="https://vefgrunnur.github.io/bjargir.html" target="_blank" title="Vefgrunnur">Gagnlegar grunnslóðir</a>        
-              </li>  
-              <li>
-                tengill hér sem vísar á mikilvæga vefsíðu 
-              </li>
-              <li>
-                tengill hér sem vísar á mikilvæga vefsíðu 
-              </li>
-              <li>
-                  tengill hér sem vísar á mikilvæga vefsíðu 
-              </li>
-          </nav>
-        </footer>
+        <nav>
+          <h4>DL listi </h4>
+          <dl><!--Description list, nafn tölvupóstur og áfangi-->
+            <dt>Nafn:</dt>
+              <dd>Óttar Orri</dd>
+           <dt>tölvupóstur</dt>
+           <dd>ottarorri@eitthvað.com</dd>
+            <dt>áfangi og braut</dt>
+            <dd>VEFÞ Tölvubraut</dd>
+          </dl>
+
+        </nav>
+        <nav>
+          <h4>Innri tenglar <em>(relative links)</em></h4>
+          <ul><!-- inner links -- hér þarf að aðlaga slóðir að eigin verkefnum -->
+
+            <li>
+            <a href="/verkefni1/verkefni1_4A.html" title="verkefni 1">Verkefni 1</a>
+            </li>
+            <li>
+              <a href="/verkefni2/index.html" title="verkefni 2">Verkefni 2</a>
+            </li>
+            <li>
+              <a href="/verkefni2/Box Model 2-1.html" title="verkefni 2.1">Verkefni 2.1</a>
+            </li>
+            <li>
+              <a href="/verkefni2/Box Model 2-2.html" title="verkefni 2.2">Verkefni 2.2</a>
+            </li>
+            <li>
+              <a href="/verkefni2/Box Model 2-3.html" title="verkefni 2.3">Verkefni 2.3</a>
+            </li>
+             <li>
+              <a href="/verkefni3" title="verkefni 3">Verkefni 3</a>
+            </li>
+            <li>
+              <a href="/verkefni3" title="verkefni 4">Verkefni 4</a>
+            </li>
+            <li>
+              <a href="/verkefni3" title="verkefni 4.1">Verkefni 4.1</a>
+            </li>
+            <li>
+              <a href="/verkefni3" title="verkefni 4.2">Verkefni 4.2</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Ytri tenglar <em>(absolute links)</em></h4>
+          <ul> <!-- Absolute links "target _blank" opnar nýjan glugga í vafranum !aðeins notað þegar vísað er út úr eigin vef-->
+            <li> 
+              <a href="https://vefgrunnur.github.io/bjargir.html" target="_blank" title="Vefgrunnur">Gagnlegar grunnslóðir</a>        
+            </li>  
+            <li>
+              <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank" title="Net Ninja">Net Ninja</a>
+            </li>
+            <li>
+             <a href="https://www.w3schools.com" target="_blank" title="W3schools">w3schools</a>
+            </li>
+            <li>
+           <a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/" target="_blank" title="Shayhowe">Shayhowe</a>
+            </li>
+        </nav>
+      </footer>
       <p class="copy">&copy; 2019 ---</p>
     <!--tengill með absolute staðsetningu -->
     <a href=" " class="topbutt" title="Efst á síðu"> &#8679; </a>
