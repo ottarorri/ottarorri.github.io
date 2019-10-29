@@ -12,10 +12,10 @@ h1 {
 }
 .headsection {width: 100%; background-image: linear-gradient(#ffdd77,#ffe9a8);padding: 2em;}
 
-.verkefni {color: white;font-family: 'Roboto Condensed', sans-serif;
+.verkefni {color: white;font-family: 'Roboto Condensed', sans-serif; text-align: right;
 }
 
-a {color: white;font-family: 'Roboto Condensed', sans-serif;
+a {color: white;font-family: 'Roboto Condensed', sans-serif; text-decoration: none;
 }
 
 
@@ -56,4 +56,8 @@ div h1{color: white;}
 .headsection3 {width: 100%; background-color: (#ffe9a8);padding: 2em;}
 
 .headsection4 {width: 100%; background-image: linear-gradient(#ffe9a8,#ffdd77);padding: 2em;}
+
+.copy {text-align: center;}
+
+.topnav {text-align: right; font-size: 20px; padding: 2em; padding-top: 3em}
 
