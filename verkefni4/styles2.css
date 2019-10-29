@@ -4,7 +4,7 @@ body {
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
     font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
-    background-color: #0272db
+    background-color: #0272db; 
 }
 h1 {
     font-weight: 300;
@@ -12,7 +12,7 @@ h1 {
 }
 .headsection {width: 100%; background-image: linear-gradient(#ffdd77,#ffe9a8);padding: 2em;}
 
-.verkefni {color: white;font-family: 'Roboto Condensed', sans-serif;  text-align: right;
+.verkefni {color: yellow;font-family: 'Roboto Condensed', sans-serif;  text-align: right;
 }
 
 a {color: white;font-family: 'Roboto Condensed', sans-serif;  text-decoration: none;
@@ -56,7 +56,17 @@ div h1{color: white ;}
 
 .headsection4 {width: 100%; background-image: linear-gradient(#ffe9a8,#ffdd77);padding: 2em;}
 
-.topnav {text-align: right; font-size: 20px; padding: 2em; padding-top: 3em}
+.topnav {text-align: right; font-size: 20px; padding: 2em; padding-top: 3em;word-spacing: 2.5em}
 
 .copy {text-align: center;}
 
+
+.innermenu a {
+  float: center;
+  text-align: center;
+  padding: 13px 18px;
+  text-decoration: none;
+  font-size: 17px; background-color: #3C45FC;
+}
+
+.svart{color: black}
