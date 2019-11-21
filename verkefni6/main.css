@@ -2,19 +2,6 @@ body, html {
     width: 90%;
     margin: 0 auto;
 }
-/*
-.wrapper{
-    
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% 10% auto 10%;
-    grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "sect1 main sect2"
-    "footer footer footer";
-}
-*/
 
 
 header {
@@ -28,36 +15,36 @@ nav { grid-area:nav;
 
 aside {
     grid-area: sect1;
-;
+
 }
 
 
 main {
     grid-area: main;
-; padding:15px;
+ padding:15px;
 }
 article {grid-area: sect2;}
 footer {
     grid-area: footer;
 
 }
+#nav1 { grid-area: nav1; }
+#nav2 { grid-area: nav2; }
+#nav3 { grid-area: nav3; }
+#nav4 { grid-area: nav4; }
+#nav5 { grid-area: nav5; }
 
-
-nav ul{
+ul{
   list-style: none;
   margin: 0 2px;
   padding: 0;
   display: flex;
   justify-content: space-around;
+  flex-flow: wrap;
 }
+li {padding: 1em}
 
-footer ul{
-  list-style: none;
-  margin: 1em 2px;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
+
 
 blockquote{text-align: center; padding: 13px; border: 1px solid;}
 
@@ -75,6 +62,7 @@ blockquote{text-align: center; padding: 13px; border: 1px solid;}
     "sect1"
     "sect2"
     "footer";}
+
 }
 
 
@@ -85,12 +73,11 @@ blockquote{text-align: center; padding: 13px; border: 1px solid;}
 }
 .wrapper {display: grid;
     grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "sect1"
-    "sect2"
-    "footer";}
+    "header header"
+    "nav nav"
+    "main main"
+    "sect1 sect2"
+    "footer footer";}
 }
 
 
@@ -99,13 +86,12 @@ blockquote{text-align: center; padding: 13px; border: 1px solid;}
 @media only screen and (min-width: 768px) {
  body {background: pink;}
  .wrapper {display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% 10% auto 10%;
     grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "sect1 main sect2"
-    "footer footer footer";}
+    "header header"
+    "nav nav"
+    "main main"
+    "sect1 sect2"
+    "footer footer";}
 }
 
 
