@@ -1,2 +1,2 @@
 # ottarorri.github.io
-https://ottarorri.github.io/verkefni5/
+#https://ottarorri.github.io/verkefni5/
