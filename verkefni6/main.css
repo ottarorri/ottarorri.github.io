@@ -28,12 +28,6 @@ footer {
     grid-area: footer;
 
 }
-#nav1 { grid-area: nav1; }
-#nav2 { grid-area: nav2; }
-#nav3 { grid-area: nav3; }
-#nav4 { grid-area: nav4; }
-#nav5 { grid-area: nav5; }
-
 ul{
   list-style: none;
   margin: 0 2px;
