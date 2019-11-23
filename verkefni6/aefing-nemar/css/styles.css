@@ -34,10 +34,10 @@
   display: grid;
   grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
   grid-template-areas:
-      "topnav"
       "header"
       "main"
-      "footer"; }
+      "footer"
+      "topnav"; }
   /* skipulag dálka kemur hér */
   
   
