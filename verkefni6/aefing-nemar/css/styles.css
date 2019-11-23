@@ -3,7 +3,7 @@
   }
   /*heimild: https://gridbyexample.com/examples/example13/ */
   
-  /* ====== GRID Area ======    */
+  /* ====== GRID Area ====== */
   
   .topnav {
   grid-area: topnav; 
@@ -11,14 +11,14 @@
   header {
   grid-area: header;
   }
-  .main{
+  main {
   grid-area: main; 
   }
   footer {
   grid-area: footer;
   }
-  /* dálkar í main    */
-  .midja{
+  /* dálkar í main */
+  .midja {
   grid-area: midja; 
   }
   .vinstri {
@@ -34,33 +34,25 @@
   display: grid;
   grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
   grid-template-areas:
-  "topnav"
-  "header"
-  "main"
-  "midja"
-  "vinstri"
-  "haegri";
-  }
+      "topnav"
+      "header"
+      "main"
+      "footer"; }
+  /* skipulag dálka kemur hér */
   
-  .main {
+  
+  main {
   display: grid; /* grid erfist aðeins til barna (child element only) */
   grid-gap: 0;
   grid-template-areas:
-  "topnav"
-  "header"
-  "main"
-  "haegri"
-  "vinstri"
-  "midja"
-  "footer";
+      "midja"
+      "vinstri"
+      "haegri";
+   /* skipulag dálka kemur hér */
   }
   
-
-
   /* ====== Base litir + padding ====== */
   
-
-
   body {
   line-height: 1.5em;
   }
@@ -181,34 +173,26 @@
   @media screen and (min-width: 30em) {
     /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 30em skjástærð */
     body {
-      display: grid;
-      grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
-      grid-template-areas:
-      "topnav"
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-areas:
       "header"
       "main"
+      "footer"
+      "topnav";
+    }
+  /* skipulag dálka kemur hér */
+  
+  
+  main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
       "midja"
       "vinstri"
-      "haegri"
-      "footer";}
-    
-    .main {
-      display: grid; /* grid erfist aðeins til barna (child element only) */
-      grid-gap: 0;
-      grid-template-columns: ;
-      grid-template-areas:
-      "header"
-      "main"
-      "midja"
-      "vinstri"
-      "haegri"
-      "footer";}
-
-    .myndabox {
-      display: grid;
-      width: 58%;
-      grid-template-columns: repeat(2, 1fr); /* ath! klasinn er með fasta breidd*/
-      }
+      "haegri";
+   /* skipulag dálka kemur hér */
+  }
   }
   
   /*  ========================================
@@ -218,31 +202,26 @@
   @media screen and (min-width: 37.5em) {
     /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 37.5em skjástærð */
     body {
-      display: grid;
-      grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
-      grid-template-areas:
-      "topnav topnav"
-      "header header"
-      "main main"
-      "haegri midja"
-      "vinstri midja"
-      "footer footer";
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-areas:
+      "header"
+      "main"
+      "footer"
+      "topnav";
       }
-    
-    .main {
-      display: grid; /* grid erfist aðeins til barna (child element only) */
-      grid-gap: 0;
-      grid-template-areas:
-      "main main"
-      "haegri midja"
-      "vinstri midja";
-      }
-
-    .myndabox {
-      display: grid;
-      width: 70%;
-      grid-template-columns: repeat(2, 1fr);  /* ath! klasinn er með fasta breidd*/
-      }
+  /* skipulag dálka kemur hér */
+  
+  
+  main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
+      "midja"
+      "vinstri"
+      "haegri";
+   /* skipulag dálka kemur hér */
+  }
   }
   /* ========================================
   Viðmið - breakpoints 48em = 760px +
@@ -251,29 +230,25 @@
   @media screen and (min-width: 48em) {  
     /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 48em skjástærð */  
     body {
-      display: grid;
-      grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
-      grid-template-areas:
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-columns: 25% 25% 50%;
+  grid-template-areas:
       "topnav topnav topnav"
       "header header header"
       "main main main"
-      "vinstri midja haegri"
-      "footer footer footer";
-      }
-    
-    .main {
-      display: grid; /* grid erfist aðeins til barna (child element only) */
-      grid-gap: 0;
-      grid-template-areas:
-      "main main main"
-      "vinstri midja haegri";
-      }
-
-    .myndabox {
-      display: grid;
-      width: 70%;
-      grid-template-columns: repeat(2, 1fr); /* ath! klasinn er með fasta breidd*/
-      }
+      "footer footer footer"; }
+  /* skipulag dálka kemur hér */
+  
+  
+  main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
+      "haegri midja midja"
+      "vinstri midja midja";
+   /* skipulag dálka kemur hér */
+  }
   }
   
   /* ========================================
@@ -282,62 +257,69 @@
   
   @media screen and (min-width: 60em) { 
     /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 60em skjástærð */  
-    body {
-      display: grid;
-      grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
-      grid-template-columns: auto auto auto;
-      grid-template-areas:
+   body {
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-areas:
       "topnav topnav topnav"
       "header header header"
       "main main main"
-      "haegri midja vinstri"
       "footer footer footer";
-      }
-    
-    .main {
-      display: grid; /* grid erfist aðeins til barna (child element only) */
-      grid-gap: 0;
-      grid-template-areas:
-      "main main main"
-      "vinstri midja haegri";
-      }
-
-    .myndabox {
-      display: grid;
-      width: 70%;
-      grid-template-columns: 1fr 1fr; /* ath! klasinn er með fasta breidd*/
-      }
+    }
+   main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
+      "vinstri midja midja haegri"
+      "vinstri midja midja haegri"
+      "vinstri midja midja haegri";
+    }
+   /* skipulag dálka kemur hér */
   }
-
+  
   /* ========================================
   Viðmið - breakpoints 80em = 1280px +
   ======================================== */
-  
-  @media screen and (min-width: 80em) { 
-    /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 80em skjástærð */  
-    body {
-      display: grid;
-      grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
-      grid-template-columns: auto auto auto;
-      grid-template-areas:
-      "topnav topnav topnav"
+  @media screen and (min-width: 80em){
+     body {
+      height: 100vh;
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-areas:
       "header header header"
+      "topnav topnav topnav"
       "main main main"
-      "footer footer footer";
-      }
-    
-    .main {
-      display: grid; /* grid erfist aðeins til barna (child element only) */
-      grid-gap: 0;
-      grid-template-columns: 30% auto 30%;
-      grid-template-areas:
+      "footer footer footer"; 
+    }
+   main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
+      "haegri vinstri vinstri"
+      "haegri vinstri vinstri"
+      "midja midja midja"
+      ;
+    }
+  
+  }
+  @media screen and (min-width: 70em){
+       body {
+  height: 100vh;
+  display: grid;
+  grid-gap: 0; /* bil á milli dálka - ath! bætist við heildarbreidd */
+  grid-template-areas:
+      "header header header"
+      "topnav topnav topnav"
       "main main main"
-      "haegri midja vinstri";
-      }
-      
-    .myndabox {
-      display: grid;
-      width: 66%;
-      grid-template-columns: 1fr 1fr 1fr 1fr; margin-left: 20%   /* ath! klasinn er með fasta breidd*/
-      }
+      "footer footer footer"; 
+    }
+   main {
+  display: grid; /* grid erfist aðeins til barna (child element only) */
+  grid-gap: 0;
+  grid-template-areas:
+      "haegri midja vinstri"
+      "haegri midja vinstri"
+      ;
+    }
+  
   }
