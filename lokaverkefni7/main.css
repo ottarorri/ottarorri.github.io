@@ -48,7 +48,15 @@ body {
 }
 
 
+.maintexti{font-size: 20px}
 
+.maintexti2{font-size: 30px}
+
+
+.transbox{background: rgba(0,0,0,0.7); color: white;}
+
+
+.Behaviour_Interactive_logo{position: relative; left: 150px;}
 header {
     grid-area: header;
 
@@ -63,7 +71,7 @@ nav { grid-area:nav;
 h3{text-align: center;}
 
 aside {
-    grid-area: sect1; background: rgba(0,0,0,0.7); color: white;
+    grid-area: sect1; 
 }
 
 
@@ -99,3 +107,4 @@ footer ul{
 }
 
 blockquote{text-align: center; padding: 13px; border: 1px solid;}
+
