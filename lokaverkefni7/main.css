@@ -123,6 +123,10 @@ nav ul li a.active {
 
 .aboutfont{font-family: 'Righteous', cursive;}
 
+.killerfont{font-family: 'Nosifer', cursive;}
+
+.lorefont{font-family: 'New Rocker', cursive;}
+
 .wrapper{
     
     display: grid;
@@ -174,4 +178,11 @@ article {grid-area: sect2;
 footer {
     grid-area: footer;
 
+}
+
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%; 
 }
