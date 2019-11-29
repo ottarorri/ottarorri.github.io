@@ -179,7 +179,7 @@ aside {
 
 main {
     grid-area: main;
-; padding:15px; width: 80%; position: relative; left: 170px;
+; padding:15px; width: 80%; position: relative; left: 250px;
 }
 
 article {grid-area: sect2; 
@@ -199,5 +199,3 @@ iframe {
 }
 
 ul{list-style-type:none;}
-
-footer{text-align: center;size: 30px}
