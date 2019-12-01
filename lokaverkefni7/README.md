@@ -1,3 +1,7 @@
+## Efnisval hjá hópinum
+Við völdum að búa til síðu um leik sem heitir Dead By Daylight sem er online tölvuleikur sem maður getur spilað saman 4 vinir eða einn með þremur öðru fólki í heiminum. Leikurinn virkar þannig að þú átt að reyna lifa af morðingja og sleppa frá honum eða spila sem morðingjinn sem þú átt þá að reyna drepa alla hina.
+
+
 ## Verkefnaáætlun yfir VEFÞ Lokaverkefni 7
 
 
